@@ -76,3 +76,15 @@
 [submodule "bundle/command-t"]
 	path = bundle/command-t
 	url = git://git.wincent.com/command-t.git
+[submodule "vim-buffalo"]
+	path = vim-buffalo
+	url = https://github.com/Raimondi/vim-buffalo.git
+[submodule "bundle/vim-buffalo"]
+	path = bundle/vim-buffalo
+	url = https://github.com/Raimondi/vim-buffalo.git
+[submodule "bundle/handlebars"]
+	path = bundle/handlebars
+	url = git://github.com/nono/vim-handlebars.git
+[submodule "bundle/vim-less"]
+	path = bundle/vim-less
+	url = https://github.com/groenewege/vim-less.git

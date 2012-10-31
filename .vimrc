@@ -1,6 +1,7 @@
 silent! call pathogen#runtime_append_all_bundles()
 silent! call pathogen#helptags()
 
+set wildignore=*/gen/*,*/node_modules/*
 set background=light
 set nocompatible      " We're running Vim, not Vi!
 syntax on             " Enable syntax highlighting
@@ -8,7 +9,11 @@ filetype on           " Enable filetype detection
 filetype indent on    " Enable filetype-specific indenting
 filetype plugin on    " Enable filetype-specific plugins
 set expandtab
+set smartcase
+set shiftwidth=4
+set softtabstop=4
 set autoindent
+set smartindent
 set syntax=automatic
 
 set backspace=indent,eol,start " make backspace a more flexible
@@ -138,3 +143,7 @@ imap jj<CR> <esc>:w<CR>
           " Also see section "2.2. names of addons and addon sources" in VAM's documentation
         endfun
         call SetupVAM()
+
+
+set tags=~/customtags
+let g:NERDTreeDirArrows=0
